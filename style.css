@@ -1,0 +1,122 @@
+/* style.css */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures container fills viewport height */
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  label {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    
+    text-align: right;
+  }
+  
+  input[type="number"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  
+  #diceResult {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #diceImage {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for dice effect */
+    display: flex; /* Allow positioning pips within */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Optional: Add styles for pips (dots) based on dice value (replace with JavaScript logic) */
+  
+  .pip {
+    width: 10px; /* Adjust pip size */
+    height: 10px; /* Adjust pip size */
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .one-pip {
+    /* Position the single pip in the center */
+  }
+  
+  .two-pip {
+    /* Position pips diagonally opposite corners */
+    position: relative;
+    top: -20%;
+    left: -20%;
+  }
+  
+  .three-pip {
+    /* Position pips in a triangle formation */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .three-pip .pip:nth-child(1) {
+    /* Position top pip */
+  }
+  
+  .three-pip .pip:nth-child(2) {
+    /* Position middle pip */
+  }
+  
+  .four-pip {
+    /* Position pips in a square formation */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .five-pip {
+    /* Position pips in a cross formation */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .six-pip {
+    /* Position pips in a grid formation */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  
+
+  img {
+    max-width: 100%;
+  }
